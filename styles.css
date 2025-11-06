@@ -1,0 +1,11 @@
+header {
+  background-color: #a5a5a5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+}
+h1 {
+  text-align: center;
+}
