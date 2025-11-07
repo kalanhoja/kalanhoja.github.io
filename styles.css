@@ -1,13 +1,75 @@
+* {
+  --header-height: 200px;
+  --footer-height: 150px;
+  --nav-height: 80px;
+}
+
+
 header {
   background-color: #a5a5a5;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 200px;
+  height: var(--header-height);
 }
 h1 {
   text-align: center;
+  color: white;
+  font-size: 48px
+  ;
+}
+
+
+
+nav {
+  background-color: rgb(247, 215, 240);
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.item-link {
+  font-size: 24px;
+  list-style: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.item-link-url {
+  text-decoration: none;
+  border: 1px solid rgb(252, 152, 168);
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #b8b8b8;
+}
+
+main {
+  background-color: rgb(254, 241, 252);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: calc(
+    var(--header-height) 
+    + var(--nav-height)
+  );
+  height: calc(
+    100% 
+    - var(--header-height)
+    - var(--nav-height)
+    - var(--footer-height)
+  )
 }
 
 footer {
@@ -16,5 +78,12 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 150px;
+  height: var(--footer-height);
+  text-align: center;
+}
+
+.skills {
+  font-size: 20px;
+  color: white;
+  margin-top: 60px;
 }
