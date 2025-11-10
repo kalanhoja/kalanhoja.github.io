@@ -1,7 +1,7 @@
 * {
   --header-height: 200px;
   --footer-height: 150px;
-  --nav-height: 80px;
+  --nav-height: 84px;
 }
 
 
@@ -29,6 +29,7 @@ nav {
   left: 0;
   right: 0;
   height: var(--nav-height);
+  border-top: 2px solid rgb(58, 2, 2);
 }
 
 .nav-list {
@@ -71,6 +72,10 @@ main {
     - var(--footer-height)
   );
   overflow-y: scroll;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid rgb(58, 2, 2);
 }
 
 .introduction {
@@ -87,6 +92,17 @@ main {
 .description {
   margin-bottom: 50px;
   margin-top: 5px;
+}
+
+.image {
+  width: 450px;
+  margin-right: 250px;
+  border: 2px solid rgb(58, 2, 2);
+}
+
+.content-image {
+  margin: 80px 0;
+  padding-top: 120px;
 }
 
 footer {
