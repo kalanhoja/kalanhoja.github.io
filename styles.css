@@ -69,7 +69,24 @@ main {
     - var(--header-height)
     - var(--nav-height)
     - var(--footer-height)
-  )
+  );
+  overflow-y: scroll;
+}
+
+.introduction {
+  margin: 80px;
+  color: rgb(58, 2, 2);
+  width: 35%;
+}
+
+.heading-two {
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  margin-bottom: 50px;
+  margin-top: 5px;
 }
 
 footer {
@@ -81,6 +98,8 @@ footer {
   height: var(--footer-height);
   text-align: center;
 }
+
+
 
 .skills {
   font-size: 20px;
